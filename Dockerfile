@@ -21,7 +21,7 @@ RUN apt-get update -y && \
   rm -rf /var/lib/apt/lists/* && \
   pip install --upgrade pip && \
   pip install --upgrade pipenv && \
-  pipenv install --deploy --system
+  pipenv install 'pipenv==2018.11.26' --deploy --system
 
 ENV HTTPIE_CONFIG_DIR /.httpie
 
